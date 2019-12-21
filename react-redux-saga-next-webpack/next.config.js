@@ -1,8 +1,9 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
-  webpack(config, options) {
-    config.resolve.alias['components'] = path.join(__dirname, 'components')
-    return config
-  }
-}
+  webpack(config) {
+    // eslint-disable-next-line no-param-reassign
+    config.resolve.alias.components = path.join(__dirname, 'src/components');
+    return config;
+  },
+};
