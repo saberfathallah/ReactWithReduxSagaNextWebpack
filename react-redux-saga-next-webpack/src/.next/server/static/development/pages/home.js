@@ -111,17 +111,20 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Home = () => __jsx("p", {
+const Home = ({
+  stars
+}) => __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4
+    lineNumber: 6
   },
   __self: undefined
-}, "homeee");
+}, stars));
 
 Home.getInitialProps = async () => {
   const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()('https://api.github.com/repos/zeit/next.js');
   const json = await res.json();
+  console.log("json", json);
   return {
     stars: json.stargazers_count
   };

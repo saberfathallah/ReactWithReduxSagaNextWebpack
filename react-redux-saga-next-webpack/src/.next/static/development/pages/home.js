@@ -816,14 +816,15 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-var Home = function Home() {
-  return __jsx("p", {
+var Home = function Home(_ref) {
+  var stars = _ref.stars;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 6
     },
     __self: this
-  }, "homeee");
+  }, stars));
 };
 
 Home.getInitialProps = function _callee() {
@@ -842,11 +843,12 @@ Home.getInitialProps = function _callee() {
 
         case 5:
           json = _context.sent;
+          console.log("json", json);
           return _context.abrupt("return", {
             stars: json.stargazers_count
           });
 
-        case 7:
+        case 8:
         case "end":
           return _context.stop();
       }
