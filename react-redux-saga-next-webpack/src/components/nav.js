@@ -5,8 +5,8 @@ const Nav = () => (
   <nav>
     <ul>
       <li>
-        <Link href="/home">
-          <p>Home</p>
+        <Link href="/users">
+          <p>Users</p>
         </Link>
       </li>
     </ul>
